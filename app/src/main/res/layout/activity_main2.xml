@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:backgroundTint="#FFF7F7">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:src="@drawable/gameover" />
+<TextView
+    android:id="@+id/tx_1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="30dp"
+    android:textColor="@color/white"
+    style="bold"/>
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:text="one more?"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+
+        />
+
+</LinearLayout>

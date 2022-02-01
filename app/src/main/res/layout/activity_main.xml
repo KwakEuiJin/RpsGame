@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#FFF7F7">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/heart_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity=""
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/heart_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity=""
+            android:src="@drawable/heart"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/heart_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity=""
+            android:src="@drawable/heart"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/result_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:visibility="visible"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="버틴 횟수"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tx_ct"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="0"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/teduri"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="40"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <ImageView
+            android:id="@+id/player_ani"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:background="@drawable/teduri"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hand_ani" />
+
+        <ImageView
+            android:id="@+id/player_set"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:background="@drawable/teduri"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_person_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="vs"
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
+        <ImageView
+            android:id="@+id/com_ani"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:layout_weight="3"
+            android:background="@drawable/teduri"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hand_ani" />
+
+        <ImageView
+            android:id="@+id/com_set"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:background="@drawable/teduri"
+            android:scaleType="fitCenter"
+            android:src="@drawable/squid"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/bt_Start"
+            android:layout_width="126dp"
+            android:layout_height="139dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFF7F7"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/start" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:orientation="horizontal"
+        android:weightSum="90">
+
+        <ImageButton
+            android:id="@+id/bt_s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="30"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="#4CBD56"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ss"
+            />
+
+        <ImageButton
+
+            android:id="@+id/bt_r"
+            android:layout_width="0dp"
+            android:backgroundTint="#67AAF8"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:src="@drawable/rock"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO"
+            android:background="@drawable/round_btn"
+            />
+        <ImageButton
+
+            android:id="@+id/bt_p"
+            android:backgroundTint="#F4E664"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:src="@drawable/paper"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO"
+            android:background="@drawable/round_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
